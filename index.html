@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/882b7f09ff.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo1.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Career</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contacts</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I'm <span>Aneesha</span></h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- -----------about----------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/aneesha.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello! I'm Aneesha Kumari, a dynamic and driven B.Tech student in Computer Science and
+                        Engineering at the prestigious IIT (ISM) Dhanbad.
+                        I am passionate about Computer science and am dedicated to achieving academic excellence.
+                        <br> <br>
+                        Throughout my studies, I have developed a strong foundation in Competitive Programming(C++)
+                        and Web Development, and am eager to continue learning and growing in this field. My projects
+                        have allowed me to apply my skills to real-world problems, enhancing my technical proficiency
+                        and
+                        problem-solving abilities.
+                        <br><br>
+                        I am excited about the oppurtunities that Computer Science offers and am eager to explore
+                        different career paths and industries. In my free time, I love exploring new technologies,
+                        participating in hackathons, and reading tech blogs to stay updated
+                        with the latest trends.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <!-- <p class="tab-links" onclick="opentab('experience')">Experience</p> -->
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming Languages </span><br> C++, Javascript, C</li>
+                            <li><span>Technologies</span><br> HTML, CSS, BootStrap, NodeJs, Express Js, MongoDB</li>
+                            <li><span>Concepts</span><br>Data Structures and Algorithm, Operating System, API, Object
+                                Oriented Programmings</li>
+                        </ul>
+                    </div>
+                    <!-- <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>web</span><br> Designing websites</li>
+                            <li><span>Web Development</span><br> Designing websites</li>
+                            <li><span>Web Development</span><br> Designing websites</li>
+                        </ul>
+                    </div> -->
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>IIT (ISM) Dhanbad</span><br> Bachelor of Technology in Computer Science and
+                                engineering <span style="color:ff004f">(GPA: 8.20 / 10.00)</span></li>
+                            <li><span>Satyam International Boriya</span><br>Central Board of Secondary Education(CBSE)
+                                <span style="color:ff004f">(Marks : 435/500)<span style="color:ff004f"></span></li>
+                            <li><span>Shivam Convent School</span><br> Central Board of Secondary Education(CBSE) <span
+                                    style="color:ff004f">(Marks : 464/500)</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---------------career--------------->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">What I do</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>I specialize in both frontend and backend development, creating dynamic and user-friendly web
+                        applications. My frontend
+                        skills include HTML, CSS, and JavaScript, while my backend expertise lies in Node.js,
+                        Express.js, and MongoDB. I
+                        have developed projects like a portfolio website, a weather-forcast website, and an Url
+                        shortener web app, ensuring seamless
+                        integration and performance.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Competitive Programming</h2>
+                    <p>I have solved many problems on several platforms such as Codeforces, CodeChef, GeeksforGeeks, and
+                        HackerRank. I have also solved over 140 DSA problems on LeetCode. These
+                        platforms have been instrumental in enhancing my problem-solving skills and algorithmic
+                        proficiency.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <!-- <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>ghgh</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati voluptatibus dolor labore impedit suscipit
+                        voluptatum praesentium harum quasi. Dicta dignissimos fugiat eaque temporibus? Animi, omnis hic? Sed,
+                        distinctio, facilis molestiae nulla impedit eveniet perspiciatis vitae voluptates libero eos nesciunt magni iste
+                        assumenda sit officia! Cupiditate hic facere eaque quaerat pariatur?</p>
+                    <a href="#">Learn more</a>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+    <!-- -----------------portfolio----------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.jpg">
+                    <div class="layer">
+                        <h3>ForecastRight</h3>
+                        <p>Created a dynamic web application with JavaScript, offering users instant access to weather
+                            information for any
+                            location. Elevated user experience with real-time updates and interactive features,
+                            enhancing the
+                            accessibility and functionality of the platform for seamless weather trackin.</p>
+                        <a href="https://aneeshakri1252.github.io/Weather-Web-/"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-02.jpg">
+                    <div class="layer">
+                        <h3>Url Shortener</h3>
+                        <p>The Link Shortener web app condenses lengthy URLs into brief, user-friendly links,
+                            simplifying web
+                            addresses for enhanced convenience.
+                            During our college festival, we’ve implemented short URLs for ease of sharing on posters and
+                            flyers, enhancing
+                            accessibility and convenience for attendees.</p>
+                        <a href="https://github.com/Aneeshakri1252/short-url"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-03.png">
+                    <div class="layer">
+                        <h3>Portfolio</h3>
+                        <p>I have created a personal portfolio using HTML, CSS, and JavaScript to showcase my projects
+                            and skills. The portfolio
+                            features a modern, responsive design, ensuring a seamless user experience across various
+                            devices. It highlights my work
+                            in web development and competitive programming, with dedicated sections for each.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!-----------------contact---------------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p> <i class="fa-solid fa-paper-plane"></i> 22je0112@iitism.ac.in</p>
+                    <!-- <p> <i class="fa-solid fa-square-phone"></i> 9263324757</p> -->
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/aneesha-kumari-9606b7265"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <!-- <a href=""><i class="fa-brands fa-instagram"></i></a> -->
+                        <!-- <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a> -->
+                    </div>
+                    <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p> Made with <i class="fa-solid fa-heart"></i> by Aneesha</p>
+        </div>
+    </div>
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzTabYA3tYpnTgn7vnP7Vm8uCu0Yc2H7vyH0V3V_MTgAfLycX0qUUVoUXXSHOLBJ0r7dA/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
